@@ -11,10 +11,12 @@ public class StreamExercises {
 		list.add("Hello");
 		list.add("boop");
 		list.add("dogs");
+		List<String> capList = arrayCapitaliser(list); 
 		
+		capList.stream().forEach(System.out::println);
 		
 	}
-	public List<String> arrayCapitaliser(List<String> array){
+	public static List<String> arrayCapitaliser(List<String> array){
 		
 		return array.stream().map(String::toUpperCase).collect(Collectors.toList());
 		
