@@ -2,7 +2,7 @@ package streamExercises;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//Question 1
 public class StreamExercises {
 
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class StreamExercises {
 		list.add("dogs");
 		List<String> capList = arrayCapitaliser(list); 
 		
-		capList.stream().forEach(System.out::println);
+		//capList.stream().forEach(System.out::println);
 		
 	}
 	public static List<String> arrayCapitaliser(List<String> array){
@@ -21,5 +21,4 @@ public class StreamExercises {
 		return array.stream().map(String::toUpperCase).collect(Collectors.toList());
 		
 	}
-
 }
